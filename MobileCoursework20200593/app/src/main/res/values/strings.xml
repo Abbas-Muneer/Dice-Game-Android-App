@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Mobile Coursework 20200593</string>
+    <string name="aboutText">I confirm that I understand what plagiarism is and have read and understood the section on Assessment Offences in the Essential Information for Students. The work that I have submitted is entirely my own.  Any work from other authors is duly referenced and acknowledged. </string>
+    <string name="aboutButton">About</string>
+    <string name="UoWID">w1870095</string>
+    <string name="IITID">20200593</string>
+    <string name="name">Sirajul Muneer Abbas</string>
+    <string name="newGame">New Game</string>
+    <string name="throwButton">Throw</string>
+    <string name="scoreButton">Score</string>
+    <string name="rerollbutton">ReRoll</string>
+    <string name="human_label">:H | </string>
+    <string name="human_score">0</string>
+    <string name="Computer_label">:C</string>
+    <string name="Computer_score">0</string>
+    <string name="You_lose">You lose</string>
+    <string name="You_win">You win!</string>
+    <string name="ComputerWins">0</string>
+    <string name="HumanWins">0</string>
+
+
+</resources>

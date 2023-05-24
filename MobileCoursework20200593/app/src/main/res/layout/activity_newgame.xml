@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="NewGame">
+
+    <Button
+        android:id="@+id/throwButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="@string/throwButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/scoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scoreButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/throwButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/diceOne"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/throwButton"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="@+id/throwButton"
+        app:layout_constraintTop_toBottomOf="@+id/throwButton"
+        app:layout_constraintVertical_bias="0.378"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/diceFive"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/diceThree"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/diceFour"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/diceFour"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/diceThree"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toStartOf="@+id/diceOne"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/diceTwo"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/diceThree"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toEndOf="@+id/diceOne"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/diceThree"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/diceOne"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/cDiceOne"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toTopOf="@+id/throwButton"
+        app:layout_constraintEnd_toEndOf="@+id/throwButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/throwButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/cDiceTwo"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toTopOf="@+id/throwButton"
+        app:layout_constraintEnd_toStartOf="@+id/cDiceThree"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toEndOf="@+id/cDiceOne"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/cDiceThree"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/throwButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/cDiceFour"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/throwButton"
+        app:layout_constraintEnd_toEndOf="@+id/cDiceThree"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/cDiceFive"
+        android:layout_width="73dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toTopOf="@+id/throwButton"
+        app:layout_constraintEnd_toStartOf="@+id/cDiceFour"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="@+id/cDiceOne"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211"
+        app:srcCompat="@drawable/dice1" />
+
+    <TextView
+        android:id="@+id/human_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/human_label"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/computer_score"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/human_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/human_score"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/human_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/computer_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/Computer_label"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/computer_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/Computer_score"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/computer_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gameovermessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cDiceTwo" />
+
+    <TextView
+        android:id="@+id/humanwintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="H:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/humanWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/HumanWins"
+        app:layout_constraintStart_toEndOf="@+id/humanwintext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/computerwintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="/ C:"
+        app:layout_constraintStart_toEndOf="@+id/humanWin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/computerWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ComputerWins"
+        app:layout_constraintStart_toEndOf="@+id/computerwintext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/YouText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="48dp"
+        android:text="YOU"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/diceOne"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ComputerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:text="COMPUTER"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cDiceOne" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
